@@ -1,0 +1,15 @@
+@startuml
+left to right direction
+
+
+actor ユーザー as User
+package "システム" {
+  usecase "宿題の提出" as UC1
+  usecase "学校からのお知らせの確認" as UC2
+   usecase "履修登録" as UC3
+}
+User --> UC1
+User --> UC2
+User --> UC3
+
+@enduml
